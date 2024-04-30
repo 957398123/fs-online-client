@@ -1,0 +1,264 @@
+{
+"skeleton": {
+	"hash": "RAYso6gZyhlwny/0OoOW4gmxEUE",
+	"spine": "3.8.75",
+	"x": -9,
+	"y": -2.5,
+	"width": 19,
+	"height": 34,
+	"fps": 60,
+	"images": "../res/rolebody/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "color": "ffffffff" },
+	{ "name": "头部", "parent": "root", "y": 23 },
+	{ "name": "帽子", "parent": "root", "y": 22 },
+	{ "name": "胸部", "parent": "root", "y": 15 },
+	{ "name": "左手", "parent": "root", "x": 7, "y": 9 },
+	{ "name": "左肩", "parent": "root", "x": 5, "y": 14 },
+	{ "name": "右手", "parent": "root", "x": -6, "y": 9, "scaleX": -1 },
+	{ "name": "右肩", "parent": "root", "x": -4, "y": 14, "scaleX": -1 },
+	{ "name": "裤子", "parent": "root", "y": 7 },
+	{ "name": "左腿", "parent": "root", "x": 3, "y": 2, "scaleX": -1 },
+	{ "name": "右腿", "parent": "root", "x": -3, "y": 3 },
+	{ "name": "主手", "parent": "root" },
+	{ "name": "副手", "parent": "root" }
+],
+"slots": [
+	{ "name": "右腿插槽", "bone": "右腿", "attachment": "38" },
+	{ "name": "左腿插槽", "bone": "左腿", "attachment": "38" },
+	{ "name": "胸部插槽", "bone": "胸部", "attachment": "278" },
+	{ "name": "左肩插槽", "bone": "左肩", "attachment": "55" },
+	{ "name": "右肩插槽", "bone": "右肩", "attachment": "55" },
+	{ "name": "裤子插槽", "bone": "裤子", "attachment": "281" },
+	{ "name": "右手插槽", "bone": "右手", "attachment": "34" },
+	{ "name": "左手插槽", "bone": "左手", "attachment": "34" },
+	{ "name": "头部插槽", "bone": "头部", "attachment": "19" },
+	{ "name": "帽子插槽", "bone": "帽子", "attachment": "262" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"右肩插槽": {
+				"55": { "width": 6, "height": 6 },
+				"56": { "width": 6, "height": 6 }
+			},
+			"左腿插槽": {
+				"38": { "width": 5, "height": 9 }
+			},
+			"左手插槽": {
+				"34": { "width": 6, "height": 6 },
+				"35": { "width": 7, "height": 6 }
+			},
+			"右腿插槽": {
+				"38": { "width": 5, "height": 9 }
+			},
+			"胸部插槽": {
+				"278": { "width": 9, "height": 9 }
+			},
+			"帽子插槽": {
+				"262": { "width": 13, "height": 5 }
+			},
+			"头部插槽": {
+				"19": { "width": 15, "height": 17 }
+			},
+			"右手插槽": {
+				"34": { "width": 6, "height": 6 },
+				"35": { "width": 7, "height": 6 }
+			},
+			"左肩插槽": {
+				"55": { "width": 6, "height": 6 },
+				"56": { "width": 6, "height": 6 }
+			},
+			"裤子插槽": {
+				"281": { "width": 13, "height": 11 },
+				"282": { "width": 13, "height": 11 }
+			}
+		}
+	}
+],
+"animations": {
+	"人类-男-行走-下": {
+		"slots": {
+			"裤子插槽": {
+				"attachment": [
+					{ "time": 0.0333, "name": "282" },
+					{ "time": 0.05, "name": "281" }
+				]
+			},
+			"左肩插槽": {
+				"attachment": [
+					{ "time": 0.0333, "name": "56" },
+					{ "time": 0.05, "name": "55" }
+				]
+			},
+			"左手插槽": {
+				"attachment": [
+					{ "time": 0.0333, "name": "35" },
+					{ "time": 0.05, "name": "34" }
+				]
+			}
+		},
+		"bones": {
+			"左腿": {
+				"translate": [
+					{ "time": 0.0167, "y": -1, "curve": "stepped" },
+					{ "time": 0.0333, "y": -4, "curve": "stepped" },
+					{ "time": 0.05, "y": -3 }
+				]
+			},
+			"右腿": {
+				"translate": [
+					{ "time": 0.0167, "y": 1, "curve": "stepped" },
+					{ "time": 0.0333, "y": 4, "curve": "stepped" },
+					{ "time": 0.05, "y": 3 }
+				]
+			},
+			"右肩": {
+				"rotate": [
+					{ "time": 0.0167, "angle": 90 }
+				],
+				"translate": [
+					{ "time": 0.0167, "x": -1, "y": 1, "curve": "stepped" },
+					{ "time": 0.0333, "x": -1, "y": -1, "curve": "stepped" },
+					{ "time": 0.05, "x": -1, "y": 1 }
+				]
+			},
+			"胸部": {
+				"translate": [
+					{ "time": 0.0167, "y": 1, "curve": "stepped" },
+					{ "time": 0.0333, "curve": "stepped" },
+					{ "time": 0.05, "y": 1 }
+				]
+			},
+			"左肩": {
+				"rotate": [
+					{ "time": 0.0333, "angle": 90, "curve": "stepped" },
+					{ "time": 0.05 }
+				],
+				"translate": [
+					{ "time": 0.0167, "y": 2, "curve": "stepped" },
+					{ "time": 0.0333, "x": -1, "y": 1, "curve": "stepped" },
+					{ "time": 0.05, "y": 2 }
+				]
+			},
+			"裤子": {
+				"translate": [
+					{ "time": 0.0167, "y": 1, "curve": "stepped" },
+					{ "time": 0.0333, "curve": "stepped" },
+					{ "time": 0.05, "y": 1 }
+				],
+				"scale": [
+					{ "time": 0.0333, "x": -1 }
+				]
+			},
+			"右手": {
+				"rotate": [
+					{ "time": 0.0167, "angle": 90 }
+				],
+				"translate": [
+					{ "time": 0.0167, "y": -2, "curve": "stepped" },
+					{ "time": 0.0333, "x": 1, "y": -4, "curve": "stepped" },
+					{ "time": 0.05, "y": -2 }
+				]
+			},
+			"左手": {
+				"rotate": [
+					{ "time": 0.0333, "angle": 90, "curve": "stepped" },
+					{ "time": 0.05 }
+				],
+				"translate": [
+					{ "time": 0.0167, "x": 1, "y": 2, "curve": "stepped" },
+					{ "time": 0.0333, "x": 1, "y": 5, "curve": "stepped" },
+					{ "time": 0.05, "x": 1, "y": 2 }
+				]
+			},
+			"头部": {
+				"translate": [
+					{ "time": 0.0167, "y": 1, "curve": "stepped" },
+					{ "time": 0.0333, "curve": "stepped" },
+					{ "time": 0.05, "y": 1 }
+				]
+			},
+			"帽子": {
+				"translate": [
+					{ "time": 0.0167, "y": 1, "curve": "stepped" },
+					{ "time": 0.0333, "curve": "stepped" },
+					{ "time": 0.05, "y": 1 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0.0333,
+				"offsets": [
+					{ "slot": "右腿插槽", "offset": 2 },
+					{ "slot": "胸部插槽", "offset": 4 },
+					{ "slot": "左手插槽", "offset": -6 }
+				]
+			},
+			{
+				"time": 0.05,
+				"offsets": [
+					{ "slot": "右腿插槽", "offset": 1 },
+					{ "slot": "胸部插槽", "offset": 3 }
+				]
+			}
+		]
+	},
+	"人类-男-静止-下": {
+		"bones": {
+			"右手": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			},
+			"右肩": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			},
+			"头部": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			},
+			"左手": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			},
+			"左肩": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			},
+			"帽子": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			},
+			"胸部": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			},
+			"裤子": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "y": -1 }
+				]
+			}
+		}
+	}
+}
+}
