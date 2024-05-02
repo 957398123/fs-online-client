@@ -52,7 +52,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 26
+      "__id__": 27
     },
     "_id": "d471a953-e178-4f81-8e30-a7ecc0eb0a38"
   },
@@ -75,13 +75,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 23
-      },
-      {
         "__id__": 24
       },
       {
         "__id__": 25
+      },
+      {
+        "__id__": 26
       }
     ],
     "_prefab": null,
@@ -117,7 +117,7 @@
   {
     "__type__": "cc.Node",
     "_name": "枉死城",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 2
@@ -178,7 +178,7 @@
   {
     "__type__": "cc.Node",
     "_name": "floor",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 3
@@ -270,7 +270,7 @@
   {
     "__type__": "cc.Node",
     "_name": "panel",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 3
@@ -362,7 +362,7 @@
   {
     "__type__": "cc.Node",
     "_name": "good",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 3
@@ -454,7 +454,7 @@
   {
     "__type__": "cc.Node",
     "_name": "obstacle",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 3
@@ -603,13 +603,16 @@
       },
       {
         "__id__": 22
+      },
+      {
+        "__id__": 23
       }
     ],
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 200.549,
-      "y": 7.538,
+      "x": 209.124,
+      "y": 6.516,
       "z": 0
     },
     "_lrot": {
@@ -749,6 +752,21 @@
     "_id": "dconrSpbhL0aE1ISlmWkQ6"
   },
   {
+    "__type__": "461f3otRQVOT4ynjWUIaH7T",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 18
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "spine": {
+      "__id__": 23
+    },
+    "_id": "c3JXF6cjNF26nBklqkQEUJ"
+  },
+  {
     "__type__": "sp.Skeleton",
     "_name": "",
     "_objFlags": 0,
@@ -775,9 +793,9 @@
     "defaultSkin": "default",
     "defaultAnimation": "人类-男-静止-下",
     "_premultipliedAlpha": true,
-    "_timeScale": 0.1,
-    "_preCacheMode": 1,
-    "_cacheMode": 1,
+    "_timeScale": 0.18,
+    "_preCacheMode": 2,
+    "_cacheMode": 2,
     "_sockets": [],
     "_useTint": false,
     "_debugMesh": false,
@@ -785,7 +803,7 @@
     "_debugSlots": false,
     "_enableBatch": false,
     "loop": true,
-    "_id": "e0E+N6I1RBaKwgQbBQVG4U"
+    "_id": "50GSFhAItDnoDRtlFd2rvp"
   },
   {
     "__type__": "cc.UITransform",
@@ -858,28 +876,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 27
-    },
-    "shadows": {
       "__id__": 28
     },
-    "_skybox": {
+    "shadows": {
       "__id__": 29
     },
-    "fog": {
+    "_skybox": {
       "__id__": 30
     },
-    "octree": {
+    "fog": {
       "__id__": 31
     },
-    "skin": {
+    "octree": {
       "__id__": 32
     },
-    "lightProbeInfo": {
+    "skin": {
       "__id__": 33
     },
-    "postSettings": {
+    "lightProbeInfo": {
       "__id__": 34
+    },
+    "postSettings": {
+      "__id__": 35
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
