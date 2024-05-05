@@ -130,7 +130,7 @@ export class PlayerController extends Component {
             }
             case KeyCode.ARROW_LEFT: {
                 this.direction = 3;
-                //this.spine!.setAnimation(0, "人类-男-静止-左", true);
+                this.spine!.setAnimation(0, "人类-男-行走-左", true);
                 break;
             }
         }

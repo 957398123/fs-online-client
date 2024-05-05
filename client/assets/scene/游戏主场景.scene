@@ -793,7 +793,7 @@
     "defaultSkin": "default",
     "defaultAnimation": "人类-男-静止-下",
     "_premultipliedAlpha": true,
-    "_timeScale": 0.18,
+    "_timeScale": 0.24,
     "_preCacheMode": 2,
     "_cacheMode": 2,
     "_sockets": [],

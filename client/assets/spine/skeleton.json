@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "zYC4kxfulZvhB6tFtv8rasVkyiU",
+	"hash": "whfxQ7WhR2jcS/WrUXnxaiJNxTk",
 	"spine": "3.8.75",
 	"x": -9,
 	"y": -2.5,
@@ -43,10 +43,13 @@
 			"右肩插槽": {
 				"55": { "width": 6, "height": 6 },
 				"56": { "width": 6, "height": 6 },
-				"57": { "width": 5, "height": 6 }
+				"57": { "width": 5, "height": 6 },
+				"58": { "width": 5, "height": 6 }
 			},
 			"左腿插槽": {
 				"38": { "width": 5, "height": 9 },
+				"40": { "width": 9, "height": 8 },
+				"41": { "width": 8, "height": 8 },
 				"43": { "width": 6, "height": 9 },
 				"44": { "width": 5, "height": 9 }
 			},
@@ -56,6 +59,8 @@
 			},
 			"右腿插槽": {
 				"38": { "width": 5, "height": 9 },
+				"40": { "width": 9, "height": 8 },
+				"41": { "width": 8, "height": 8 },
 				"43": { "width": 6, "height": 9 },
 				"44": { "x": 0.5, "y": 0.5, "width": 5, "height": 9 }
 			},
@@ -76,16 +81,19 @@
 			},
 			"右手插槽": {
 				"34": { "width": 6, "height": 6 },
-				"35": { "width": 7, "height": 6 }
+				"35": { "width": 7, "height": 6 },
+				"37": { "width": 6, "height": 5 }
 			},
 			"左肩插槽": {
 				"55": { "width": 6, "height": 6 },
-				"56": { "width": 6, "height": 6 }
+				"56": { "width": 6, "height": 6 },
+				"58": { "width": 5, "height": 6 }
 			},
 			"裤子插槽": {
 				"281": { "width": 13, "height": 11 },
 				"282": { "width": 13, "height": 11 },
 				"283": { "width": 11, "height": 11 },
+				"284": { "x": 0.5, "y": 0.5, "width": 11, "height": 11 },
 				"285": { "x": 0.5, "y": 0.5, "width": 13, "height": 9 }
 			}
 		}
@@ -94,10 +102,18 @@
 "animations": {
 	"人类-男-行走-下": {
 		"slots": {
-			"左手插槽": {
+			"裤子插槽": {
 				"attachment": [
-					{ "time": 0.0667, "name": "35" },
-					{ "time": 0.1, "name": "34" }
+					{ "name": "282" },
+					{ "time": 0.0333, "name": "281" },
+					{ "time": 0.0667, "name": "282" },
+					{ "time": 0.1, "name": "281" }
+				]
+			},
+			"右手插槽": {
+				"attachment": [
+					{ "name": "35" },
+					{ "time": 0.0333, "name": "34" }
 				]
 			},
 			"左肩插槽": {
@@ -112,18 +128,10 @@
 					{ "time": 0.0333, "name": "55" }
 				]
 			},
-			"裤子插槽": {
+			"左手插槽": {
 				"attachment": [
-					{ "name": "282" },
-					{ "time": 0.0333, "name": "281" },
-					{ "time": 0.0667, "name": "282" },
-					{ "time": 0.1, "name": "281" }
-				]
-			},
-			"右手插槽": {
-				"attachment": [
-					{ "name": "35" },
-					{ "time": 0.0333, "name": "34" }
+					{ "time": 0.0667, "name": "35" },
+					{ "time": 0.1, "name": "34" }
 				]
 			}
 		},
@@ -243,6 +251,202 @@
 			}
 		]
 	},
+	"人类-男-行走-左": {
+		"slots": {
+			"头部插槽": {
+				"attachment": [
+					{ "name": "20" }
+				]
+			},
+			"裤子插槽": {
+				"attachment": [
+					{ "name": "283" },
+					{ "time": 0.0333, "name": "284" },
+					{ "time": 0.0667, "name": "283" }
+				]
+			},
+			"右腿插槽": {
+				"attachment": [
+					{ "name": "43" },
+					{ "time": 0.0333, "name": "41" },
+					{ "time": 0.0667, "name": "43" },
+					{ "time": 0.1, "name": "40" }
+				]
+			},
+			"右手插槽": {
+				"attachment": [
+					{ "name": "35" },
+					{ "time": 0.0333, "name": "37" },
+					{ "time": 0.0667, "name": "34" }
+				]
+			},
+			"左腿插槽": {
+				"attachment": [
+					{ "name": "43" },
+					{ "time": 0.0333, "name": "40" },
+					{ "time": 0.0667, "name": "38" },
+					{ "time": 0.1, "name": "41" }
+				]
+			},
+			"左肩插槽": {
+				"attachment": [
+					{ "time": 0.0333, "name": "56" },
+					{ "time": 0.0667, "name": "55" },
+					{ "time": 0.1, "name": "58" }
+				]
+			},
+			"右肩插槽": {
+				"attachment": [
+					{ "name": "57" },
+					{ "time": 0.0333, "name": "58" },
+					{ "time": 0.0667, "name": "57" },
+					{ "time": 0.1, "name": "56" }
+				]
+			},
+			"左手插槽": {
+				"attachment": [
+					{ "time": 0.0667, "name": "35" }
+				]
+			},
+			"帽子插槽": {
+				"attachment": [
+					{ "name": "263" }
+				]
+			},
+			"胸部插槽": {
+				"attachment": [
+					{ "name": "279" }
+				]
+			}
+		},
+		"bones": {
+			"左手": {
+				"translate": [
+					{ "x": -7, "curve": "stepped" },
+					{ "time": 0.0333, "y": -3, "curve": "stepped" },
+					{ "time": 0.0667, "x": -5, "y": -3, "curve": "stepped" },
+					{ "time": 0.1, "x": -8, "y": -2 }
+				]
+			},
+			"右腿": {
+				"rotate": [
+					{ "time": 0.0333, "angle": 90, "curve": "stepped" },
+					{ "time": 0.0667 }
+				],
+				"translate": [
+					{ "x": 3, "y": 1, "curve": "stepped" },
+					{ "time": 0.0333, "x": 6, "curve": "stepped" },
+					{ "time": 0.0667, "x": 3, "y": -1, "curve": "stepped" },
+					{ "time": 0.1, "x": -1 }
+				]
+			},
+			"左腿": {
+				"rotate": [
+					{ "time": 0.1, "angle": 90 }
+				],
+				"translate": [
+					{ "x": -1, "y": -1, "curve": "stepped" },
+					{ "time": 0.0333, "x": -6, "y": -1, "curve": "stepped" },
+					{ "time": 0.0667, "x": -3, "y": -1, "curve": "stepped" },
+					{ "time": 0.1, "x": 2, "y": -1 }
+				],
+				"scale": [
+					{ "x": -1 }
+				]
+			},
+			"胸部": {
+				"translate": [
+					{ "x": 2, "y": -2, "curve": "stepped" },
+					{ "time": 0.0333, "x": 2, "y": -3, "curve": "stepped" },
+					{ "time": 0.0667, "x": 2, "y": -2, "curve": "stepped" },
+					{ "time": 0.1, "x": 2, "y": -3 }
+				]
+			},
+			"裤子": {
+				"translate": [
+					{ "x": 1, "y": -1, "curve": "stepped" },
+					{ "time": 0.0333, "x": 1, "y": -2, "curve": "stepped" },
+					{ "time": 0.0667, "x": 1, "y": -1, "curve": "stepped" },
+					{ "time": 0.1, "x": 1, "y": -2 }
+				]
+			},
+			"头部": {
+				"translate": [
+					{ "x": 3, "y": -1, "curve": "stepped" },
+					{ "time": 0.0333, "x": 3, "y": -2, "curve": "stepped" },
+					{ "time": 0.0667, "x": 3, "y": -1, "curve": "stepped" },
+					{ "time": 0.1, "x": 3, "y": -2 }
+				]
+			},
+			"帽子": {
+				"translate": [
+					{ "x": 2, "curve": "stepped" },
+					{ "time": 0.0333, "x": 2, "y": -1, "curve": "stepped" },
+					{ "time": 0.0667, "x": 2, "curve": "stepped" },
+					{ "time": 0.1, "x": 2, "y": -1 }
+				]
+			},
+			"右手": {
+				"rotate": [
+					{ "time": 0.0333, "angle": 90, "curve": "stepped" },
+					{ "time": 0.0667 }
+				],
+				"translate": [
+					{ "x": 8, "y": -3, "curve": "stepped" },
+					{ "time": 0.0333, "curve": "stepped" },
+					{ "time": 0.0667, "x": 6 }
+				],
+				"scale": [
+					{ "x": -1 }
+				]
+			},
+			"右肩": {
+				"rotate": [
+					{ "time": 0.0333, "angle": -90, "curve": "stepped" },
+					{ "time": 0.0667 }
+				],
+				"translate": [
+					{ "x": 3, "curve": "stepped" },
+					{ "time": 0.0333, "x": 2, "y": -1, "curve": "stepped" },
+					{ "time": 0.0667, "x": 3, "curve": "stepped" },
+					{ "time": 0.1, "x": 7, "y": -3 }
+				],
+				"scale": [
+					{ "time": 0.1, "x": -1 }
+				]
+			},
+			"左肩": {
+				"rotate": [
+					{ "time": 0.0333, "angle": 90 }
+				],
+				"translate": [
+					{ "x": -1, "y": -3, "curve": "stepped" },
+					{ "time": 0.0333, "y": -3, "curve": "stepped" },
+					{ "time": 0.0667, "x": -1, "y": -3, "curve": "stepped" },
+					{ "time": 0.1, "x": -3 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "左肩插槽", "offset": 5 },
+					{ "slot": "右肩插槽", "offset": -3 },
+					{ "slot": "右手插槽", "offset": 3 },
+					{ "slot": "左手插槽", "offset": -7 }
+				]
+			},
+			{
+				"time": 0.0333,
+				"offsets": [
+					{ "slot": "左肩插槽", "offset": 5 },
+					{ "slot": "右肩插槽", "offset": -3 },
+					{ "slot": "右手插槽", "offset": -6 },
+					{ "slot": "左手插槽", "offset": 2 }
+				]
+			}
+		]
+	},
 	"人类-男-静止-上": {
 		"slots": {
 			"头部插槽": {
@@ -250,9 +454,9 @@
 					{ "name": "31" }
 				]
 			},
-			"左腿插槽": {
+			"裤子插槽": {
 				"attachment": [
-					{ "name": "44" }
+					{ "name": "285" }
 				]
 			},
 			"右腿插槽": {
@@ -260,19 +464,19 @@
 					{ "name": "44" }
 				]
 			},
-			"胸部插槽": {
+			"左腿插槽": {
 				"attachment": [
-					{ "name": "280" }
-				]
-			},
-			"裤子插槽": {
-				"attachment": [
-					{ "name": "285" }
+					{ "name": "44" }
 				]
 			},
 			"帽子插槽": {
 				"attachment": [
 					{ "name": "264" }
+				]
+			},
+			"胸部插槽": {
+				"attachment": [
+					{ "name": "280" }
 				]
 			}
 		},
@@ -431,17 +635,17 @@
 					{ "name": "20" }
 				]
 			},
-			"左腿插槽": {
+			"裤子插槽": {
+				"attachment": [
+					{ "name": "283" }
+				]
+			},
+			"右腿插槽": {
 				"attachment": [
 					{ "name": "43" }
 				]
 			},
-			"左手插槽": {
-				"attachment": [
-					{ "name": "35" }
-				]
-			},
-			"右腿插槽": {
+			"左腿插槽": {
 				"attachment": [
 					{ "name": "43" }
 				]
@@ -451,19 +655,19 @@
 					{ "name": "57" }
 				]
 			},
-			"胸部插槽": {
+			"左手插槽": {
 				"attachment": [
-					{ "name": "279" }
-				]
-			},
-			"裤子插槽": {
-				"attachment": [
-					{ "name": "283" }
+					{ "name": "35" }
 				]
 			},
 			"帽子插槽": {
 				"attachment": [
 					{ "name": "263" }
+				]
+			},
+			"胸部插槽": {
+				"attachment": [
+					{ "name": "279" }
 				]
 			}
 		},
@@ -569,17 +773,17 @@
 					{ "name": "20" }
 				]
 			},
-			"左腿插槽": {
+			"裤子插槽": {
+				"attachment": [
+					{ "name": "283" }
+				]
+			},
+			"右腿插槽": {
 				"attachment": [
 					{ "name": "43" }
 				]
 			},
-			"左手插槽": {
-				"attachment": [
-					{ "name": "35" }
-				]
-			},
-			"右腿插槽": {
+			"左腿插槽": {
 				"attachment": [
 					{ "name": "43" }
 				]
@@ -589,19 +793,19 @@
 					{ "name": "57" }
 				]
 			},
-			"胸部插槽": {
+			"左手插槽": {
 				"attachment": [
-					{ "name": "279" }
-				]
-			},
-			"裤子插槽": {
-				"attachment": [
-					{ "name": "283" }
+					{ "name": "35" }
 				]
 			},
 			"帽子插槽": {
 				"attachment": [
 					{ "name": "263" }
+				]
+			},
+			"胸部插槽": {
+				"attachment": [
+					{ "name": "279" }
 				]
 			}
 		},
