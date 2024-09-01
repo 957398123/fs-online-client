@@ -1,11 +1,12 @@
 import { _decorator, Component, KeyCode, sp } from 'cc';
 import { input, Input, EventKeyboard } from 'cc';
 import { Vec3 } from 'cc';
+import { OtherPlayer } from "./OtherPlayer";
 
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerController')
-export class PlayerController extends Component {
+export class PlayerController extends OtherPlayer {
 
     @property({ type: sp.Skeleton })
     spine: sp.Skeleton | null = null;
