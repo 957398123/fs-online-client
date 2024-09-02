@@ -7,5 +7,25 @@
       "fitHeight": true
     }
   },
-  "custom_joint_texture_layouts": []
+  "custom_joint_texture_layouts": [],
+  "sorting-layer": {
+    "layers": [
+      {
+        "id": 0,
+        "name": "default",
+        "value": 0
+      }
+    ],
+    "increaseId": 2
+  },
+  "layer": [
+    {
+      "name": "MAP",
+      "value": 1
+    },
+    {
+      "name": "UI",
+      "value": 2
+    }
+  ]
 }
